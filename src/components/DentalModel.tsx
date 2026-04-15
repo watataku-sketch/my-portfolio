@@ -21,7 +21,7 @@ export default function DentalModel() {
             intensity={0.5} 
             contactShadow={{ opacity: 0.4, blur: 2 }}
             adjustCamera={1.8} 
-            center
+            center={{ top: true }}
           >
             <Model />
           </Stage>
