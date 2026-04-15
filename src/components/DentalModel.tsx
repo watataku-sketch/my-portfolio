@@ -17,14 +17,13 @@ export default function DentalModel() {
         
         <Suspense fallback={null}>
           <Stage 
-            environment="city" 
-            intensity={0.5} 
-            contactShadow={{ opacity: 0.4, blur: 2 }}
-            adjustCamera={1.8} 
-            center={{ top: true }}
-          >
-            <Model />
-          </Stage>
+  environment="city" 
+  intensity={0.5} 
+  adjustCamera={1.8}
+  // 🚀 center と shadows を一旦削除しました
+>
+  <Model />
+</Stage>
         </Suspense>
 
         <OrbitControls 
