@@ -29,9 +29,12 @@ export default function HarePontPage() {
           <div className="h-[400px] md:h-[600px] w-full">
             <DentalModel />
           </div>
-          <div className="p-6 bg-slate-900 text-white text-center text-sm tracking-widest">
-            マウスやタッチで「自分の歯」をグリグリと動かして発見する体験
-          </div>
+         <div className="p-6 bg-slate-900 text-white text-center text-sm tracking-widest leading-relaxed">
+  マウスやタッチで「自分の歯」をグリグリと動かして発見する体験<br />
+  <span className="text-[11px] opacity-70 font-light mt-1 block">
+    （マウスホイールやピンチイン・ピンチアウトで拡大・縮小も可能です）
+  </span>
+</div>
         </div>
 
         {/* --- Concept Section --- */}

@@ -72,11 +72,16 @@ export default function Home() {
     </p>
 
     {/* 3Dモデル表示エリア */}
-    <div className="relative w-full max-w-[800px] h-[400px] md:h-[500px] shadow-2xl rounded-2xl overflow-hidden border-4 border-slate-100 bg-slate-900 group">
-      <DentalModel />
-      <div className="absolute bottom-4 right-4 bg-white/10 backdrop-blur-md px-3 py-1 rounded-full text-[10px] text-white/50 pointer-events-none">
-        3D MODEL: DRAG TO ROTATE
+    <div className="w-full bg-white rounded-3xl shadow-xl shadow-slate-200/60 overflow-hidden border border-slate-100">
+      <div className="h-[400px] md:h-[550px] w-full">
+        <DentalModel />
       </div>
+   <div className="p-6 bg-slate-900 text-white text-center text-sm tracking-widest leading-relaxed">
+  マウスやタッチで「自分の歯」をグリグリと動かして発見する体験<br />
+  <span className="text-[11px] opacity-70 font-light mt-1 block">
+    （マウスホイールやピンチイン・ピンチアウトで拡大・縮小も可能です）
+  </span>
+</div>
     </div>
   </div>
 </section>
