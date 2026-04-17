@@ -3,6 +3,7 @@
 import React, { useState } from 'react'; // { useState } を追加
 import DentalModel from '@/components/DentalModel';
 
+
 export default function Home() {
   const [isOpen, setIsOpen] = useState(false); // 初期値は false（閉じている）
   // ...
@@ -21,7 +22,7 @@ export default function Home() {
           <div className="hidden md:flex items-center gap-8 text-sm font-medium text-slate-600">
             <a href="/about" className="hover:text-blue-600 transition-colors">About</a>
             <a href="#Projects" className="hover:text-blue-600 transition-colors">Projects</a>
-            <a href="#Works" className="hover:text-blue-600 transition-colors">Works</a>
+            <a href="/works/hare-pont" className="hover:text-blue-600 transition-colors">Works</a>
             <a href="#Blog" className="hover:text-blue-600 transition-colors">Blog</a>
             <a href="/contact" className="hover:text-blue-600 transition-colors">Contact</a>
           </div>
@@ -45,7 +46,7 @@ export default function Home() {
           <div className="md:hidden bg-white border-b border-slate-100 px-6 py-6 flex flex-col gap-4 animate-in fade-in slide-in-from-top-4 duration-300">
             <a href="/about" onClick={() => setIsOpen(false)} className="text-lg font-medium text-slate-600">About</a>
             <a href="#Projects" onClick={() => setIsOpen(false)} className="text-lg font-medium text-slate-600">Projects</a>
-            <a href="#Works" onClick={() => setIsOpen(false)} className="text-lg font-medium text-slate-600">Works</a>
+            <a href="/works/hare-pont" onClick={() => setIsOpen(false)} className="text-lg font-medium text-slate-600">Works</a>
             <a href="#Blog" onClick={() => setIsOpen(false)} className="text-lg font-medium text-slate-600">Blog</a>
             <a href="/contact" onClick={() => setIsOpen(false)} className="text-lg font-medium text-slate-600">Contact</a>
           </div>
