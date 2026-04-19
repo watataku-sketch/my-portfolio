@@ -184,10 +184,32 @@ export default function WorksPage() {
               </div>
 
               <div className="space-y-4">
-                <h4 className="font-bold text-lg border-l-4 border-slate-900 pl-4">Music: 大阪市鶴見区 音楽コンテスト 投票1位 (2014)</h4>
-                <div className="bg-slate-200 aspect-video rounded-xl flex items-center justify-center text-slate-400">演奏風景 / 賞状</div>
-                <p className="text-sm text-slate-600 leading-relaxed">Achievement: 聴衆による直接投票で1位を獲得。Background: 人に涙していただいた「作詞作曲」と「アコースティックギター弾き語り」の感覚は、現在のコーディングにおけるアニメーション設計の基礎となっています。</p>
-              </div>
+  <h4 className="font-bold text-lg border-l-4 border-slate-900 pl-4">
+    Music: 大阪市鶴見区 音楽コンテスト お客様投票1位 (2014)
+  </h4>
+  
+  <div className="relative w-full aspect-video rounded-2xl overflow-hidden shadow-xl">
+    <iframe
+      className="absolute top-0 left-0 w-full h-full"
+      src="https://www.youtube.com/embed/eOgHYc0DTvE?rel=0&modestbranding=1&controls=1"
+      title="YouTube video player"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowFullScreen
+    ></iframe>
+  </div>
+
+  <div className="text-sm text-slate-600 leading-relaxed space-y-2">
+    <p><strong>Achievement:</strong> 聴衆による直接投票で1位を獲得。</p>
+    <p><strong>Set List:</strong></p>
+    <ul className="list-disc list-inside pl-2 space-y-1">
+      <li>1曲目：なごり雪（カバー）</li>
+      <li>2曲目：オレンジ（祖母のために作ったオリジナルソング）</li>
+    </ul>
+    <p className="pt-2">
+      <strong>Background:</strong> 人に涙していただいた「作詞作曲」と「アコースティックギター弾き語り」の感覚は、現在のコーディングにおけるアニメーション設計の基礎となっています。
+    </p>
+  </div>
+</div>
 
               <div className="space-y-4">
                 <h4 className="font-bold text-lg border-l-4 border-slate-900 pl-4">Writing: トロント情報誌『TORJA』 ラブコメ連載 (2011-2012)</h4>
