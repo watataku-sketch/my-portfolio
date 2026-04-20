@@ -27,28 +27,45 @@ export default function WorksPage() {
             </p>
           </section>
 
-          {/* --- Section 01: TOKYO NODE --- */}
-          <section className="mb-24">
-            <h3 className="text-2xl font-bold mb-6 border-b pb-2 flex items-center gap-3">
-              <span className="text-blue-600 italic">01.</span> 虎ノ門ヒルズ ステーションタワー TOKYO NODE SKY GARDEN & POOL
-            </h3>
-            <div className="bg-slate-900 aspect-video rounded-3xl overflow-hidden mb-8 flex items-center justify-center text-white/30 text-sm">
-              {/* [!VIDEO] 展示風景の動画を配置 */}
-              <p>VIDEO: 展示風景（水面に映る光や、空との境界線が動く様子）</p>
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-sm">
-              <div className="space-y-4">
-                <p><strong>Project Data:</strong> 企業依頼 / 2025.11 〜</p>
-                <p><strong>Tech Stack:</strong> Processing / DaVinci Resolve</p>
-                <p><strong>Requested theme:</strong> 大人の遊び場</p>
-                <p><strong>Title of work:</strong> 「童心にかえろう」</p>
-              </div>
-              <div className="space-y-4 border-l pl-8 border-slate-100">
-                <p><strong>Concept:</strong> 地上250mのインフィニティプールという特殊な環境に合わせ、鑑賞者自身が太陽になったかのような感覚を味わってもらう設計。単なる映像投影ではなく、作品単体で完結するのではなく、この場所の「景色」と、そこに立つ「あなた」が合わさって初めて完成するアート。</p>
-                <p><strong>Insights:</strong> 子どもの頃の気持ちを思い出し、気持ちを解放してもらいたい。</p>
-              </div>
-            </div>
-          </section>
+         {/* --- Section 01: TOKYO NODE --- */}
+<section className="mb-24">
+  <h3 className="text-2xl font-bold mb-6 border-b pb-2 flex items-center gap-3">
+    <span className="text-blue-600 italic">01.</span> 虎ノ門ヒルズ ステーションタワー TOKYO NODE SKY GARDEN & POOL
+  </h3>
+
+  <div className="relative w-full aspect-video rounded-3xl overflow-hidden mb-8 shadow-xl">
+    <iframe
+      className="absolute top-0 left-0 w-full h-full"
+      src="https://www.youtube.com/embed/v_IPm8Fbe4A?rel=0&modestbranding=1&controls=1"
+      title="TOKYO NODE SKY GARDEN & POOL 展示映像"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowFullScreen
+    ></iframe>
+  </div>
+
+  {/* 撮影に関する注釈 */}
+  <div className="text-right pr-2 space-y-1 mb-8">
+    <p className="text-[10px] text-slate-400">
+      ※運営事務局による記録映像です。
+    </p>
+    <p className="text-[11px] text-blue-500 font-medium">
+      （中央よりやや下の青い部分にプールがあります　。）
+    </p>
+  </div>
+
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-sm">
+    <div className="space-y-4">
+      <p><strong>Project Data:</strong> 企業依頼 / 2025.11 〜</p>
+      <p><strong>Tech Stack:</strong> Processing / DaVinci Resolve</p>
+      <p><strong>Requested theme:</strong> 大人の遊び場</p>
+      <p><strong>Title of work:</strong> 「童心にかえろう」</p>
+    </div>
+    <div className="space-y-4 border-l pl-8 border-slate-100">
+      <p><strong>Concept:</strong> 地上250mのインフィニティプールという特殊な環境に合わせ、鑑賞者自身が太陽になったかのような感覚を味わってもらう設計。単なる映像投影ではなく、作品単体で完結するのではなく、この場所の「景色」と、そこに立つ「あなた」が合わさって初めて完成するアート。</p>
+      <p><strong>Insights:</strong> 子どもの頃の気持ちを思い出し、気持ちを解放してもらいたい。</p>
+    </div>
+  </div>
+</section>
 
           {/* --- Section 02: UN:O --- */}
           <section className="mb-24">
@@ -101,24 +118,42 @@ export default function WorksPage() {
             </div>
           </section>
 
-          {/* --- Section 04: KITTE OSAKA --- */}
-          <section className="mb-32 border-b pb-24">
-            <h3 className="text-2xl font-bold mb-6 border-b pb-2 flex items-center gap-3 text-slate-950">
-              <span className="text-blue-600 italic">04.</span> ＫＩＴＴＥ大阪 AxCROSS - 大規模空間への初デプロイ
-            </h3>
-            <div className="bg-slate-200 aspect-[18/5] rounded-xl mb-8 flex items-center justify-center text-slate-500">VIDEO: 18m超広角ビジョン</div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-sm">
-              <div className="space-y-2 text-slate-700">
-                <p><strong>Project Data:</strong> 公募選出（テーマ：広告募集広告） / 2025.03</p>
-                <p><strong>Tech Stack:</strong> Processing / DaVinci Resolve</p>
-                <p><strong>Open Call Theme:</strong> 広告募集広告</p>
-              </div>
-              <div className="space-y-4 border-l pl-8 border-slate-100 text-slate-700">
-                <p><strong>Concept:</strong> 旧大阪中央郵便局の歴史を刻む建屋にて、進化を止めることのない「大阪の生命力」を表現。18mという超広角なキャンバスを活かし、ビル群が建設されて生まれ変わる大阪をイメージ。</p>
-                <p><strong>Insights:</strong> クリエイティブコーディングにおける「初展示作」でありながら、公共空間の大型ビジョンへの社会実装を成功させた原点。</p>
-              </div>
-            </div>
-          </section>
+{/* --- Section 04: KITTE OSAKA --- */}
+<section className="mb-32 border-b pb-24">
+  <h3 className="text-2xl font-bold mb-6 border-b pb-2 flex items-center gap-3 text-slate-950">
+    <span className="text-blue-600 italic">04.</span> ＫＩＴＴＥ大阪 AxCROSS - 大規模空間での初展示
+  </h3>
+
+  {/* aspect-video に変更して、他の動画とサイズを統一 */}
+  <div className="relative w-full aspect-video rounded-3xl overflow-hidden mb-2 shadow-xl bg-slate-900">
+    <iframe
+      className="absolute top-0 left-0 w-full h-full"
+      src="https://www.youtube.com/embed/vwhM3V2hNLo?rel=0&modestbranding=1&controls=1"
+      title="KITTE大阪 AxCROSS 展示映像"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowFullScreen
+    ></iframe>
+  </div>
+
+  {/* 注釈 */}
+  <div className="text-right pr-2 space-y-1 mb-8 mt-4">
+    <p className="text-[11px] text-slate-400 font-medium">
+      （横幅18mの超広角ビジョンでの展示。ビル群が上下に動き、街が生まれ変わる表現を実装しました）
+    </p>
+  </div>
+
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-sm">
+    <div className="space-y-2 text-slate-700">
+      <p><strong>Project Data:</strong> 公募選出 / 2025.03</p>
+      <p><strong>Tech Stack:</strong> Processing / DaVinci Resolve</p>
+      <p><strong>Open Call Theme:</strong> 広告募集広告</p>
+    </div>
+    <div className="space-y-4 border-l pl-8 border-slate-100 text-slate-700">
+      <p><strong>Concept:</strong> 旧大阪中央郵便局の歴史を刻む建屋にて、進化を止めることのない「大阪の生命力」を表現。18mという超広角なキャンバスを活かし、ビル群が建設されて生まれ変わる大阪をイメージ。</p>
+      <p><strong>Insights:</strong> クリエイティブコーディングにおける「初展示作」でありながら、公共空間の大型ビジョンへの社会実装を成功させた原点。</p>
+    </div>
+  </div>
+</section>
 
           {/* --- Section: Digital Impact --- */}
           <section className="mb-32">
