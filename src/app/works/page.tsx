@@ -20,7 +20,7 @@ export default function WorksPage() {
   </span>
 </h2>
             <div className="bg-slate-50 border-l-4 border-blue-600 p-8 rounded-r-2xl mb-8 text-lg leading-relaxed shadow-sm text-slate-800">
-              「クリエイティブコーディング独学開始から1年9か月。3つの公募展を経て、TOKYO NODE（虎ノ門ヒルズ）の制作依頼を完遂。未経験からでも社会実装まで最短距離で漕ぎ着ける『完遂力』を視覚化します。」
+              「クリエイティブコーディング独学開始から1年9か月。3つの公募展で選出を経て、TOKYO NODE（虎ノ門ヒルズ）の制作依頼を完遂。未経験からでも社会実装まで最短距離で漕ぎ着ける『完遂力』を視覚化します。」
             </div>
             <p className="text-lg text-slate-700 leading-relaxed font-medium mb-4">
               7年間の在宅介護で味わった「言葉が届かない」もどかしさ。 私はその課題を、3Dという「手に取るような体験」に変換することで解決します。 ここに並ぶ実績は、すべて「説明のむずかしいこと」を直感的な安心へと橋渡しするための、社会実装の記録です。
@@ -33,7 +33,7 @@ export default function WorksPage() {
     <span className="text-blue-600 italic">01.</span> 虎ノ門ヒルズ ステーションタワー TOKYO NODE SKY GARDEN & POOL
   </h3>
 
-  <div className="relative w-full aspect-video rounded-3xl overflow-hidden mb-8 shadow-xl">
+  <div className="relative w-full aspect-video rounded-3xl overflow-hidden mb-2 shadow-xl">
     <iframe
       className="absolute top-0 left-0 w-full h-full"
       src="https://www.youtube.com/embed/v_IPm8Fbe4A?rel=0&modestbranding=1&controls=1"
@@ -44,12 +44,12 @@ export default function WorksPage() {
   </div>
 
   {/* 撮影に関する注釈 */}
-  <div className="text-right pr-2 space-y-1 mb-8">
+  <div className="text-right pr-2 space-y-1 mb-8 mt-4">
     <p className="text-[10px] text-slate-400">
       ※運営事務局による記録映像です。
     </p>
     <p className="text-[11px] text-blue-500 font-medium">
-      （中央よりやや下の青い部分にプールがあります　。）
+      （中央よりやや下の青い部分にプールがあります。）
     </p>
   </div>
 
