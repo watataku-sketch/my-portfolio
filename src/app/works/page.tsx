@@ -56,9 +56,9 @@ export default function WorksPage() {
   <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-sm">
     <div className="space-y-4">
       <p><strong>Project Data:</strong> 企業依頼 / 2025.11 〜</p>
-      <p><strong>Tech Stack:</strong> Processing / DaVinci Resolve</p>
       <p><strong>Requested theme:</strong> 大人の遊び場</p>
       <p><strong>Title of work:</strong> 「童心にかえろう」</p>
+      <p><strong>Tech Stack:</strong> Processing / DaVinci Resolve</p>
     </div>
     <div className="space-y-4 border-l pl-8 border-slate-100">
       <p><strong>Concept:</strong> 地上250mのインフィニティプールという特殊な環境に合わせ、鑑賞者自身が太陽になったかのような感覚を味わってもらう設計。単なる映像投影ではなく、作品単体で完結するのではなく、この場所の「景色」と、そこに立つ「あなた」が合わさって初めて完成するアート。</p>
@@ -143,25 +143,91 @@ export default function WorksPage() {
           </section>
 
           {/* --- Section 03: STATION TOWER --- */}
-          <section className="mb-24">
-            <h3 className="text-2xl font-bold mb-6 border-b pb-2 flex items-center gap-3">
-              <span className="text-blue-600 italic">03.</span> 虎ノ門ヒルズ ステーションタワー B2F サイネージ / 展示
-            </h3>
-            <div className="bg-slate-900 aspect-video rounded-3xl overflow-hidden mb-8 flex items-center justify-center text-white/30 text-sm">
-              <p>VIDEO: 光の粒子が三次元に再配置される映像</p>
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-sm text-slate-700">
-              <div className="space-y-2">
-                <p><strong>Project Data:</strong> 公募選出 / 2025.09</p>
-                <p><strong>Open Call Theme:</strong> PERFORMED IMAGE</p>
-                <p><strong>Tech Stack:</strong> Processing / DaVinci Resolve</p>
-              </div>
-              <div className="space-y-4 border-l pl-8 border-slate-100">
-                <p><strong>Concept:</strong> 台湾ワーキングホリデー中に出会った人々が、私にかけてくれた「汗かきすぎ、大丈夫？」「風邪ひいたの？今日はご飯のお金はいいから、たくさん食べて元気だしなさい」といった、温かい言葉の数々。本作は、その記憶の断片を、Processingによって光の粒子へと分解し、三次元空間に再配置する試み</p>
-                <p><strong>Insight:</strong> 記憶を抽象的に再現すると同時に、駅を行き交う人一人ひとりがダイヤモンドで、誰一人欠けてはならない存在であるということを伝えたかった</p>
-              </div>
-            </div>
-          </section>
+<section className="mb-32">
+  <h3 className="text-2xl font-bold mb-8 border-b pb-2 flex items-center gap-3 text-slate-950">
+    <span className="text-blue-600 italic">03.</span> 虎ノ門ヒルズ ステーションタワー B2F サイネージ / 展示
+  </h3>
+
+  <div className="space-y-16 mb-16">
+    {/* 1つめの動画 */}
+    <div>
+      <div className="relative w-full aspect-video rounded-3xl overflow-hidden mb-2 shadow-xl bg-slate-900">
+        <iframe
+          className="absolute top-0 left-0 w-full h-full"
+          src="https://www.youtube.com/embed/Y8Kmt50hKc8?rel=0&modestbranding=1&controls=1"
+          title="STATION TOWER 展示映像 1"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        ></iframe>
+      </div>
+      <div className="text-right pr-2 mt-4">
+        <p className="text-[10px] text-slate-400">※運営事務局による記録映像を編集したものです。</p>
+      </div>
+    </div>
+
+    {/* 2つめの動画 */}
+    <div>
+      <div className="relative w-full aspect-video rounded-3xl overflow-hidden mb-2 shadow-xl bg-slate-900">
+        <iframe
+          className="absolute top-0 left-0 w-full h-full"
+          src="https://www.youtube.com/embed/d29d_0k3J1I?rel=0&modestbranding=1&controls=1"
+          title="STATION TOWER 展示映像 2"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        ></iframe>
+      </div>
+      <div className="text-right pr-2 mt-4">
+        <p className="text-[10px] text-slate-400">※運営事務局による記録映像を編集したものです。</p>
+      </div>
+    </div>
+
+    {/* 3つめの動画 ＋ 4枚の画像 */}
+    <div>
+      <div className="relative w-full aspect-video rounded-3xl overflow-hidden mb-2 shadow-xl bg-slate-900">
+        <iframe
+          className="absolute top-0 left-0 w-full h-full"
+          src="https://www.youtube.com/embed/kiE-erCZrmk?rel=0&modestbranding=1&controls=1"
+          title="STATION TOWER 展示映像 3"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        ></iframe>
+      </div>
+      <div className="text-right pr-2 mt-4">
+        <p className="text-[10px] text-slate-400">※作品の色がゆっくりと移り変わる様子を、4枚の写真で並べました。</p>
+        <p className="text-[10px] text-slate-400">※展示会場の空気感と、作品の輝きをじっくり見ていただくために、あえて静止画を掲載しています。</p>
+      </div>
+
+      {/* 4枚の画像グリッド：縦長比率 [3/4] に変更 */}
+<div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-8">
+  <div className="aspect-[3/4] bg-slate-100 rounded-2xl overflow-hidden shadow-sm">
+    <img src="/images/station-tower-1.jpg" alt="展示風景1" className="w-full h-full object-cover" />
+  </div>
+  <div className="aspect-[3/4] bg-slate-100 rounded-2xl overflow-hidden shadow-sm">
+    <img src="/images/station-tower-2.jpg" alt="展示風景2" className="w-full h-full object-cover" />
+  </div>
+  <div className="aspect-[3/4] bg-slate-100 rounded-2xl overflow-hidden shadow-sm">
+    <img src="/images/station-tower-3.jpg" alt="展示風景3" className="w-full h-full object-cover" />
+  </div>
+  <div className="aspect-[3/4] bg-slate-100 rounded-2xl overflow-hidden shadow-sm">
+    <img src="/images/station-tower-4.jpg" alt="展示風景4" className="w-full h-full object-cover" />
+  </div>
+</div>
+    </div>
+  </div>
+
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-sm text-slate-700">
+    <div className="space-y-2">
+      <p><strong>Project Data:</strong> 公募選出 / 2025.09</p>
+      <p><strong>Open Call Theme:</strong> PERFORMED IMAGE</p>
+      <p><strong>Title of work:</strong> 再演される記憶</p>
+      <p><strong>Tech Stack:</strong> Processing / DaVinci Resolve</p>
+    </div>
+    <div className="space-y-4 border-l pl-8 border-slate-100">
+      <p><strong>Concept:</strong> 台湾ワーキングホリデー中に出会った人々が、私にかけてくれた温かい言葉の数々。その記憶の断片を、Processingによって光の粒子へと分解し、三次元空間に再配置する試み。</p>
+      <p><strong>Insight:</strong> 記憶を抽象的に再現すると同時に、駅を行き交う人一人ひとりがダイヤモンドで、誰一人欠けてはならない存在であるということを伝えたかった。</p>
+    </div>
+  </div>
+</section>
 
 {/* --- Section 04: KITTE OSAKA --- */}
 <section className="mb-32 border-b pb-24">
@@ -190,8 +256,9 @@ export default function WorksPage() {
   <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-sm">
     <div className="space-y-2 text-slate-700">
       <p><strong>Project Data:</strong> 公募選出 / 2025.03</p>
-      <p><strong>Tech Stack:</strong> Processing / DaVinci Resolve</p>
       <p><strong>Open Call Theme:</strong> 広告募集広告</p>
+      <p><strong>Title of work:</strong> 生まれ変わり続ける大阪</p>
+      <p><strong>Tech Stack:</strong> Processing / DaVinci Resolve</p>
     </div>
     <div className="space-y-4 border-l pl-8 border-slate-100 text-slate-700">
       <p><strong>Concept:</strong> 旧大阪中央郵便局の歴史を刻む建屋にて、進化を止めることのない「大阪の生命力」を表現。18mという超広角なキャンバスを活かし、ビル群が建設されて生まれ変わる大阪をイメージ。</p>
@@ -246,58 +313,94 @@ export default function WorksPage() {
             </div>
           </section>
 
-          {/* --- Section: Legacy --- */}
-          <section className="mb-32 bg-slate-50 -mx-6 px-6 py-20 rounded-3xl">
-          <h2 className="text-3xl font-extrabold mb-12 tracking-tight flex flex-col gap-2 text-slate-950">
-            <span className="flex items-center gap-3">
-            <span className="text-blue-600">🎨</span> Professional Legacy
-            </span>
-            <span className="text-lg md:text-xl font-medium text-slate-500 tracking-normal">
-            プロフェッショナル・レガシー：多領域における表現の実績
-            </span>
-          </h2>
-            <div className="grid grid-cols-1 gap-16">
-              <div className="space-y-4">
-                <h4 className="font-bold text-lg border-l-4 border-slate-900 pl-4">Photography: 台北ナビ 表紙写真撮影 (2018)</h4>
-                <div className="bg-slate-200 aspect-video rounded-xl flex items-center justify-center text-slate-400">台北ナビ 表紙写真</div>
-                <p className="text-sm text-slate-600 leading-relaxed">Overview: 台湾最大の観光情報サイト「台北ナビ」のトップを飾るメインビジュアルを担当。スクールフォトにて前年比500%アップの売上</p>
-              </div>
+         {/* --- Section: Legacy --- */}
+<section className="mb-32 bg-slate-50 -mx-6 px-6 py-20 rounded-3xl">
+  <div className="max-w-4xl mx-auto">
+    <h2 className="text-3xl font-extrabold mb-16 tracking-tight flex flex-col gap-2 text-slate-950">
+      <span className="flex items-center gap-3">
+        <span className="text-blue-600">🎨</span> Creative Journey
+      </span>
+      <span className="text-lg md:text-xl font-medium text-slate-500 tracking-normal">
+        表現の歩み：多領域における活動と実績
+      </span>
+    </h2>
 
-              <div className="space-y-4">
-  <h4 className="font-bold text-lg border-l-4 border-slate-900 pl-4">
-    Music: 大阪市鶴見区 音楽コンテスト お客様投票1位 (2014)
-  </h4>
-  
-  <div className="relative w-full aspect-video rounded-2xl overflow-hidden shadow-xl">
-    <iframe
-      className="absolute top-0 left-0 w-full h-full"
-      src="https://www.youtube.com/embed/eOgHYc0DTvE?rel=0&modestbranding=1&controls=1"
-      title="YouTube video player"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowFullScreen
-    ></iframe>
+    <div className="grid grid-cols-1 gap-20">
+      
+      {/* 1. Music/Hybrid: 内なる言葉のクロニクル */}
+      <div className="space-y-6">
+        <h4 className="font-bold text-xl border-l-4 border-blue-600 pl-4 text-slate-900">
+          AI × Human Session: オリジナルソング「内なる言葉のクロニクル」
+        </h4>
+        <div className="relative w-full aspect-video rounded-3xl overflow-hidden shadow-xl bg-slate-900">
+          <iframe
+            className="absolute top-0 left-0 w-full h-full"
+            src="https://www.youtube.com/embed/ic_x06YvDQg?rel=0&modestbranding=1"
+            title="内なる言葉のクロニクル"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
+        </div>
+        <div className="text-sm text-slate-700 leading-relaxed space-y-4">
+          <p><strong>Concept:</strong> 「わたしたちは言葉でできている」という詩を、アルゴリズムという名の風にのせて視覚的に翻訳。Suno AIを用いた楽曲制作と、Processingによるジェネラティブ映像を融合させた、人間と機械の対話の記録です。</p>
+          <div className="bg-white/50 p-4 rounded-xl italic text-slate-600 border border-slate-100">
+            「今日、あなたの世界は、どんな色の言葉で満たされていますか？」
+          </div>
+          <p className="text-[11px] text-slate-500">
+            ※虎ノ門ヒルズ TOKYO NODE「DIGITAL SPRINGBOARD」テーマ『詩とコンピュータ』という公募に提出した作品に、音楽をつけた曲　
+          </p>
+        </div>
+      </div>
+
+      {/* 2. Music: 音楽コンテスト 投票1位 (2014) */}
+      <div className="space-y-6">
+        <h4 className="font-bold text-xl border-l-4 border-blue-600 pl-4 text-slate-900">
+          Music: 大阪市鶴見区 音楽コンテスト お客様投票1位 (2014)
+        </h4>
+        <div className="relative w-full aspect-video rounded-3xl overflow-hidden shadow-xl bg-slate-900">
+          <iframe
+            className="absolute top-0 left-0 w-full h-full"
+            src="https://www.youtube.com/embed/eOgHYc0DTvE?rel=0&modestbranding=1&controls=1"
+            title="Music Contest 2014"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
+        </div>
+        <div className="text-sm text-slate-600 leading-relaxed pl-5 space-y-2">
+          <p><strong>Achievement:</strong> 聴衆による直接投票で1位を獲得。大阪市鶴見区 音楽大使に任命される。</p>
+          <p><strong>Achievement:</strong> 地域文化の振興を目的とした音楽大使として活動。イベントにて出演し、音楽を通じたコミュニティ活性化に貢献しました。</p>
+          <p><strong>Set List:</strong> なごり雪（カバー）、オレンジ（オリジナル曲）</p>
+          <p className="pt-2 text-slate-500 italic">
+            Background: 人に涙していただいた弾き語りの経験は、現在の「心に届くアニメーション設計」の原点となっています。
+          </p>
+        </div>
+      </div>
+
+      {/* 4. Photography: 台北ナビ (文字のみ) */}
+      <div className="space-y-4">
+        <h4 className="font-bold text-xl border-l-4 border-blue-600 pl-4 text-slate-900">
+          Photography: 台湾の大手観光メディアでの表紙採用や、商業撮影を通じた大幅な業績改善
+        </h4>
+        <div className="text-sm text-slate-600 leading-relaxed pl-5">
+          <p><strong>Overview:</strong> 台湾最大の観光情報サイト「台北ナビ」の表紙写真を撮影。スクールフォト売上アップ</p>
+          <p><strong>Impact:</strong> スクールフォト等の商業撮影において、前年比500%の売上アップを達成。</p>
+        </div>
+      </div>
+
+      {/* 5. Writing: トロント情報誌『TORJA』 (文字のみ) */}
+      <div className="space-y-4">
+        <h4 className="font-bold text-xl border-l-4 border-blue-600 pl-4 text-slate-900">
+          Writing: トロント情報誌『TORJA』 ラブコメ連載 (2011-2012)
+        </h4>
+        <div className="text-sm text-slate-600 leading-relaxed pl-5">
+          <p><strong>Project:</strong> カナダ・トロントの日本人向け現地情報誌にてコラムを連載。</p>
+          <p><strong>Storytelling:</strong> 読者にきゅんきゅんしてもらえるような展開を追求。後のSEOライター・文筆家としてのキャリア、および論理的な構成力の礎となりました。</p>
+        </div>
+      </div>
+
+    </div>
   </div>
-
-  <div className="text-sm text-slate-600 leading-relaxed space-y-2">
-    <p><strong>Achievement:</strong> 聴衆による直接投票で1位を獲得。</p>
-    <p><strong>Set List:</strong></p>
-    <ul className="list-disc list-inside pl-2 space-y-1">
-      <li>1曲目：なごり雪（カバー）</li>
-      <li>2曲目：オレンジ（祖母のために作ったオリジナルソング）</li>
-    </ul>
-    <p className="pt-2">
-      <strong>Background:</strong> 人に涙していただいた「作詞作曲」と「アコースティックギター弾き語り」の感覚は、現在のコーディングにおけるアニメーション設計の基礎となっています。
-    </p>
-  </div>
-</div>
-
-              <div className="space-y-4">
-                <h4 className="font-bold text-lg border-l-4 border-slate-900 pl-4">Writing: トロント情報誌『TORJA』 ラブコメ連載 (2011-2012)</h4>
-                <div className="bg-slate-200 aspect-video rounded-xl flex items-center justify-center text-slate-400">掲載誌面 / トロント時代のスナップ</div>
-                <p className="text-sm text-slate-600 leading-relaxed">Project: カナダ・トロントの日本人向けの現地情報誌にてコラムを連載。Storytelling: SEOライター・文筆家としてのキャリアのスタート地点</p>
-              </div>
-            </div>
-          </section>
+</section>
 
           {/* --- Section: Future Outlook --- */}
           <section className="bg-blue-600 text-white p-12 rounded-[2rem] shadow-xl shadow-blue-200">
