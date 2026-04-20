@@ -267,51 +267,93 @@ export default function WorksPage() {
   </div>
 </section>
 
-          {/* --- Section: Digital Impact --- */}
-          <section className="mb-32">
-            <h2 className="text-3xl font-extrabold mb-12 tracking-tight flex flex-col gap-2 text-slate-950">
-              <span className="flex items-center gap-3">
-              <span className="text-blue-600">📈</span> Digital Impact & Strategy
-             </span>
-              <span className="text-lg md:text-xl font-medium text-slate-500 tracking-normal">
-               デジタル・インパクトと戦略：「数字」と「戦略」で示す構築力
-            </span>
-            </h2>
-            <div className="space-y-20">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-                <div className="bg-slate-100 aspect-video rounded-2xl flex items-center justify-center text-slate-400">Search Consoleのグラフ画像</div>
-                <div>
-                  <h4 className="font-bold text-xl mb-4 text-slate-950">Google Discover 選出：情報の「拡散」をハックする</h4>
-                  <p className="text-blue-600 font-bold mb-4">Result: 37,622表示 / 2,254クリック（11日間継続）</p>
-                  <p className="text-sm text-slate-600 leading-relaxed">
-                    Strategy: 独自の「手帳論」をターゲットに刺さるタイミングで公開。SEO/Webマーケティングの知見を活かし、Googleの推薦アルゴリズムに適合させた実績。
-                  </p>
-                </div>
-              </div>
+  {/* --- Section: Digital Impact & Strategy --- */}
+<section className="mb-32">
+  <div className="flex flex-col gap-2 mb-16">
+    <h2 className="text-3xl font-extrabold tracking-tight text-slate-950 flex items-center gap-3">
+      <span className="text-blue-600">📈</span> Digital Impact & Strategy
+    </h2>
+    <p className="text-lg text-slate-500 font-medium">
+      デジタル・インパクトと戦略：「数字」と「戦略」で示す構築力
+    </p>
+  </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-                <div className="order-2 md:order-1">
-                  <h4 className="font-bold text-xl mb-4 text-slate-950">E-Commerce Strategy：年間売上100万円の創出</h4>
-                  <p className="text-blue-600 font-bold mb-4">Result: Amazonアソシエイト 年間売上 ¥1,003,788（2021）</p>
-                  <p className="text-sm text-slate-600 leading-relaxed">
-                    Strategy: コンテンツの訴求力とSEO設計により、広告に頼らず個人の発信力のみで100万円規模の流通を発生させるマーケット感覚を証明。
-                  </p>
-                </div>
-                <div className="bg-slate-100 aspect-video rounded-2xl flex items-center justify-center text-slate-400 order-1 md:order-2">売上集計画面のキャプチャ</div>
-              </div>
+  <div className="space-y-24">
+    
+    {/* 01. Google Discover (左にカード / 右にテキスト) */}
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+      <div className="p-8 bg-white rounded-[40px] border border-slate-100 shadow-xl shadow-blue-500/5 transition-all hover:shadow-blue-500/10">
+        <div className="text-blue-600 text-4xl mb-6">🚀</div>
+        <h4 className="font-bold text-xl mb-3 text-slate-900">Google Discover選出</h4>
+        <p className="text-5xl font-black text-slate-900 mb-4 tracking-tighter">
+          37,622 <span className="text-lg font-medium text-slate-400 italic">views</span>
+        </p>
+        <p className="text-sm text-slate-500 font-medium bg-slate-50 inline-block px-3 py-1 rounded-full">
+          11日間継続的な拡散を達成
+        </p>
+      </div>
+      
+      <div className="space-y-4 pl-4 border-l-2 border-slate-100">
+        <h4 className="text-xl font-bold text-slate-900 leading-tight">
+          情報の「拡散」を最適化する
+        </h4>
+        <p className="text-blue-600 font-bold">Result: 37,622表示 / 2,254クリック</p>
+        <p className="text-sm text-slate-600 leading-relaxed">
+          <strong>Strategy:</strong> 特定の層に深く刺さる「手帳論」を設計。SEO検定1級の知見を活かし、構造化データや情報の鮮度をGoogleの推薦アルゴリズムに適合させた事例。
+        </p>
+      </div>
+    </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-                <div className="bg-slate-100 aspect-video rounded-2xl flex items-center justify-center text-slate-400 text-center p-4 text-xs">認定証のフラットデザイン画像</div>
-                <div>
-                  <h4 className="font-bold text-xl mb-4 text-slate-950">Authority：Web戦略を支える専門知識</h4>
-                  <p className="mb-4"><strong>Certification:</strong> SEO検定1級 / Webマーケティング検定1級</p>
-                  <p className="text-sm text-slate-600 leading-relaxed">
-                    Insight: 確かな理論的バックボーンに基づいたWeb戦略の立案・実行が可能です。
-                  </p>
-                </div>
-              </div>
-            </div>
-          </section>
+    {/* 02. E-Commerce (左にテキスト / 右にカード) */}
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+      <div className="order-2 md:order-1 space-y-4 pr-4 border-r-2 border-slate-100">
+        <h4 className="text-xl font-bold text-slate-900 leading-tight">
+          年間売上100万円の創出
+        </h4>
+        <p className="text-green-600 font-bold">Result: Amazonアソシエイト 年間売上 ¥1,003,788</p>
+        <p className="text-sm text-slate-600 leading-relaxed">
+          <strong>Strategy:</strong> コンテンツの訴求力とSEO設計により、広告に頼らず個人の発信力のみで100万円規模の流通を発生させるマーケット感覚を証明。
+        </p>
+      </div>
+      
+      <div className="order-1 md:order-2 p-8 bg-white rounded-[40px] border border-slate-100 shadow-xl shadow-green-500/5 transition-all hover:shadow-green-500/10">
+        <div className="text-green-600 text-4xl mb-6">💰</div>
+        <h4 className="font-bold text-xl mb-3 text-slate-900">年間流通額の創出</h4>
+        <p className="text-5xl font-black text-slate-900 mb-4 tracking-tighter">
+          ¥1.0M<span className="text-2xl">+</span>
+        </p>
+        <p className="text-sm text-slate-500 font-medium bg-slate-50 inline-block px-3 py-1 rounded-full">
+          広告費ゼロ・純粋なSEO設計のみ
+        </p>
+      </div>
+    </div>
+
+    {/* 03. Authority / NASA (左にカード / 右にテキスト) */}
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+      <div className="p-8 bg-white rounded-[40px] border border-slate-100 shadow-xl shadow-purple-500/5 transition-all hover:shadow-purple-500/10 border-b-4 border-b-purple-500/20">
+        <div className="text-purple-600 text-4xl mb-6">✨</div>
+        <h4 className="font-bold text-xl mb-3 text-slate-900">Google AI 概要への選出</h4>
+        <p className="text-2xl font-black text-slate-800 mb-4 tracking-tight">
+          Featured by Google SGE
+        </p>
+        <p className="text-sm text-slate-500 font-medium bg-slate-50 inline-block px-3 py-1 rounded-full">
+          権威性の高いコンテンツ設計の証明
+        </p>
+      </div>
+
+      <div className="space-y-4 pl-4 border-l-2 border-slate-100">
+        <h4 className="text-xl font-bold text-slate-900 leading-tight">
+          Google AI 検索概要（SGE）への採用
+        </h4>
+        <p className="text-purple-600 font-bold italic">Authority : 専門知識に基づく情報設計</p>
+        <p className="text-sm text-slate-600 leading-relaxed">
+          <strong>Insight:</strong> モレスキンNASA限定版の記事が、GoogleのAIによる検索概要に採用。単なるブログの枠を超え、検索エンジンに「最も信頼できる回答」として認識される、精度の高いドキュメント作成能力を示しました。
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
 
          {/* --- Section: Legacy --- */}
 <section className="mb-32 bg-slate-50 -mx-6 px-6 py-20 rounded-3xl">
