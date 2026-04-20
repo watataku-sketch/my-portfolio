@@ -79,21 +79,66 @@ export default function WorksPage() {
                 <p><strong>Tech Stack:</strong> Processing / DaVinci Resolve</p>
               </div>
 
-              <div className="space-y-6">
-                <h4 className="font-bold text-lg">2-1 選出作品1</h4>
-                <div className="bg-slate-200 aspect-video rounded-2xl flex items-center justify-center text-slate-500">ここに動画</div>
-                <p><strong>Title of work:</strong> 静寂を打つ光</p>
-                <p><strong>Concept:</strong> 日本の庭園に見られる「ししおどし」をモチーフに、創造的な仕事のサイクルを表現したデジタルアートです。静かに思考が満ちる「蓄積」、アイデアが形になる「解放」、誠に次の創造へと向かう「浄化」の循環。これは、UN:Oという空間で日々生まれる、知的生産活動の穏やかで力強いリズムそのものを表現しています</p>
-                <p><strong>Insights:</strong> アイデアが浮かびやすくなるような作品を</p>
-              </div>
+              {/* --- 2-1 選出作品1 --- */}
+　            <div className="space-y-6">
+               <h4 className="font-bold text-lg text-slate-900 border-l-4 border-blue-600 pl-4">
+               2-1 選出作品1：静寂を打つ光
+               </h4>
 
-              <div className="space-y-6 border-t pt-12">
-                <h4 className="font-bold text-lg">2-2 選出作品2</h4>
-                <div className="bg-slate-200 aspect-video rounded-2xl flex items-center justify-center text-slate-500">ここに動画</div>
-                <p><strong>Title of work:</strong> 自分に、まる</p>
-                <p><strong>Concept:</strong> この作品は、タイムマネジメント手法「ポモドーロテクニック」を、自己肯定の行為として再解釈した、25分間のインタラクティブアートです。25分間、画面には一定の間隔で、温かみのある「まる」が一つずつ増えていきます。これは、生産性を測るためのタイマーではありません。ただ仕事に向き合った、その尊い時間そのものを肯定するための装置です。</p>
-                <p><strong>Insights:</strong> 仕事をしてふと、が目を見たときにマルが表示されているのを見て、心理的な負担を減らしつつ、やる気、行動意欲を高めるのが目的の作品</p>
-              </div>
+               {/* YouTube埋め込み */}
+               <div className="relative w-full aspect-video rounded-3xl overflow-hidden mb-2 shadow-xl bg-slate-900">
+                <iframe
+                className="absolute top-0 left-0 w-full h-full"
+                src="https://www.youtube.com/embed/2DspcKR0oTk?rel=0&modestbranding=1&controls=1"
+                title="UN:O 選出作品1 展示映像"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen></iframe>
+                </div>
+
+  {/* 撮影に関する注釈のみ */}
+  <div className="text-right pr-2 mb-8 mt-4">
+    <p className="text-[10px] text-slate-400">
+      ※運営事務局による記録映像です。
+    </p>
+  </div>
+
+  <div className="space-y-4 text-slate-700 leading-relaxed text-sm">
+    <p><strong>Title of work:</strong> 静寂を打つ光</p>
+    <p><strong>Concept:</strong> 日本の庭園に見られる「ししおどし」をモチーフに、創造的な仕事のサイクルを表現したデジタルアートです。静かに思考が満ちる「蓄積」、アイデアが形になる「解放」、そして次の創造へと向かう「浄化」の循環。これは、UN:Oという空間で日々生まれる、知的生産活動のリズムそのものを表現しています。</p>
+    <p><strong>Insights:</strong> アイデアが浮かびやすくなるような、思考の余白を生む視覚体験の設計。</p>
+  </div>
+</div>
+
+              {/* --- 2-2 選出作品2 --- */}
+<div className="space-y-6 border-t pt-12">
+  <h4 className="font-bold text-lg text-slate-900 border-l-4 border-blue-600 pl-4">
+    2-2 選出作品2：自分に、まる
+  </h4>
+
+  {/* YouTube埋め込み */}
+  <div className="relative w-full aspect-video rounded-3xl overflow-hidden mb-2 shadow-xl bg-slate-900">
+    <iframe
+      className="absolute top-0 left-0 w-full h-full"
+      src="https://www.youtube.com/embed/UbScEorOWLQ?rel=0&modestbranding=1&controls=1"
+      title="UN:O 選出作品2 展示映像"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowFullScreen
+    ></iframe>
+  </div>
+
+  {/* 撮影に関する注釈のみ（青文字なし） */}
+  <div className="text-right pr-2 mb-8 mt-4">
+    <p className="text-[10px] text-slate-400">
+      ※運営事務局による記録映像です。
+    </p>
+  </div>
+
+  <div className="space-y-4 text-slate-700 leading-relaxed text-sm">
+    <p><strong>Title of work:</strong> 自分に、まる</p>
+    <p><strong>Concept:</strong> この作品は、タイムマネジメント手法「ポモドーロテクニック」を、自己肯定の行為として再解釈した、25分間のインタラクティブアートです。25分間、画面には一定の間隔で、温かみのある「まる」が一つずつ増えていきます。これは、生産性を測るためのタイマーではありません。ただ仕事に向き合った、その尊い時間そのものを肯定するための装置です。</p>
+    <p><strong>Insights:</strong> 仕事をしながら、ふと画面に「まる」が表示されているのを見て、心理的な負担を減らしつつ、やる気、行動意欲を高めるのが目的の作品。</p>
+  </div>
+</div>
             </div>
           </section>
 
