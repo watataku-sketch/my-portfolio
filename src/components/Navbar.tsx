@@ -10,7 +10,7 @@ export default function Navbar() {
     { name: 'About', href: '/about' },
     { name: 'Projects', href: '/projects/hare-pont' },
     { name: 'Works', href: '/works' },
-    { name: 'blog', href: '/blog' },
+    { name: 'Blog', href: '/blog' },
     { name: 'Contact', href: '/contact' },
   ];
 
