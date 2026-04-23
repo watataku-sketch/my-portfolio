@@ -23,7 +23,7 @@ export default function Home() {
             <a href="/about" className="hover:text-blue-600 transition-colors">About</a>
             <a href="/projects/hare-pont" className="hover:text-blue-600 transition-colors">Projects</a>
             <a href="/works" className="hover:text-blue-600 transition-colors">Works</a>
-            <a href="#Blog" className="hover:text-blue-600 transition-colors">Blog</a>
+            <a href="/blog" className="hover:text-blue-600 transition-colors">Blog</a>
             <a href="/contact" className="hover:text-blue-600 transition-colors">Contact</a>
           </div>
           
@@ -47,7 +47,7 @@ export default function Home() {
             <a href="/about" onClick={() => setIsOpen(false)} className="text-lg font-medium text-slate-600">About</a>
             <a href="/projects/hare-pont" onClick={() => setIsOpen(false)} className="text-lg font-medium text-slate-600">Projects</a>
             <a href="/works" onClick={() => setIsOpen(false)} className="text-lg font-medium text-slate-600">Works</a>
-            <a href="#Blog" onClick={() => setIsOpen(false)} className="text-lg font-medium text-slate-600">Blog</a>
+            <a href="/blog" onClick={() => setIsOpen(false)} className="text-lg font-medium text-slate-600">Blog</a>
             <a href="/contact" onClick={() => setIsOpen(false)} className="text-lg font-medium text-slate-600">Contact</a>
           </div>
         )}
