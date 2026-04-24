@@ -8,34 +8,34 @@ const blogPosts = [
     category: "Vision",
     title: "「見えない不安」を「見える安心」へ。在宅介護7年で気づいた、医療の『伝え方』を3Dで変える方法。",
     description: "情報の非対称性が生む医療現場の課題を、3Dビジュアライゼーションでどう解決するか。当事者としての視点を綴ります。",
-    date: "2026.04.23",
+    date: "2026.04.24",
     color: "bg-blue-50 text-blue-600",
-    slug: "medical-3d-visualization"
+    slug: "vision-3d-care"
   },
   {
     id: 2,
     category: "SEO/Marketing",
     title: "2,100記事の「磨き上げ」で辿り着いた情報の価値。SEO/Webマーケ検定1級が教える、HealthTechに必要な信頼（E-E-A-T）の作り方。",
     description: "膨大な試行錯誤から学んだ「情報の質」へのこだわり。命を扱うプロダクトにおいて、いかにして信頼を構築し、インデックスさせるか。",
-    date: "2026.04.22",
+    date: "2026.04.24",
     color: "bg-green-50 text-green-600",
-    slug: "seo-eeat-strategy"
+    slug: "trust-and-seo"
   },
   {
     id: 3,
     category: "Art/Contribution",
     title: "アートは、人を救うツールになれるか。展示実績が教えてくれた「役に立つ表現」の充実感と、医療・介護への展望。",
     description: "UN:O選出やKITTE大阪での展示を経て。自己表現としてのコードを、誰かのための技術へと昇華させるパラダイムシフトの記録。",
-    date: "2026.04.21",
+    date: "2026.04.24",
     color: "bg-purple-50 text-purple-600",
-    slug: "art-as-hospitality"
+    slug: "art-and-care"
   },
   {
     id: 4,
     category: "UX/Engineering",
     title: "「癒やす手」を守るエンジニアリング。歯科医師の負担を最小化する、ホスピタリティ溢れるUX設計の「作法」。",
     description: "現場の最前線で戦うプロフェッショナルの身体的負荷を、コードでどう軽減できるか。対話から生まれた新しいUXの形。",
-    date: "2026.04.20",
+    date: "2026.04.24",
     color: "bg-rose-50 text-rose-600",
     slug: "ux-for-dental-care"
   }
