@@ -11,6 +11,18 @@ export default function AboutPage() {
       {/* メインコンテンツ */}
       <main className="pt-32 pb-20 px-6 max-w-4xl mx-auto">
         
+        {/* プロフィール見出し */}
+        <header className="mb-16">
+         <div className="flex flex-col md:flex-row md:items-baseline gap-2 md:gap-4 mb-4">
+          <h1 className="text-4xl md:text-5xl font-black text-slate-900 tracking-tighter">
+           渡 琢矢
+          </h1>
+           <span className="text-xl md:text-2xl font-light text-slate-400 tracking-widest uppercase italic">
+           / Watataku
+           </span>
+          </div>
+        </header>
+        
         {/* モットーセクション */}
         <section className="mb-20">
           <div className="border-l-4 border-blue-600 pl-6 mb-8">
