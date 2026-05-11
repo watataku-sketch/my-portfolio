@@ -5,7 +5,7 @@ import { Canvas } from '@react-three/fiber';
 import { OrbitControls, Stage, useGLTF } from '@react-three/drei';
 
 function Model() {
-  const { scene } = useGLTF('/models/tooth_model.glb'); 
+  const { scene } = useGLTF('/models/tooth_model_ver2.glb'); 
   return <primitive object={scene} />;
 }
 
