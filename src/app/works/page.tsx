@@ -352,6 +352,43 @@ export default function WorksPage() {
       </div>
     </div>
 
+{/* 04. SEO Precision / Processing */}
+<div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
+  
+  <div className="order-2 md:order-1 space-y-4 md:pr-4 border-l-4 md:border-l-0 md:border-r-2 border-indigo-500/20 pl-4 md:pl-0">
+    <h4 className="text-xl font-bold text-slate-900 leading-snug">
+      {/* 52.7%の部分で変な改行が起きないよう inline-block を使用 */}
+      検索需要のピーク時において、<span className="inline-block text-indigo-600">CTR 52.7%</span>を記録
+    </h4>
+
+    <p className="text-indigo-600 font-bold text-lg">
+      Result: CTR 52.7% / Avg. Position 2.5 / Engagement 52s
+    </p>
+
+    <p className="text-sm text-slate-600 leading-relaxed text-left">
+      <strong>Strategy:</strong> 
+      技術クエリ「Processing min()」において、上位競合を圧倒し<span className="inline-block font-bold text-slate-800">2人に1人がクリックする</span>驚異的な適合率を達成。
+      平均順位2.5位でありながら50%を超えるCTRは、ユーザーの検索意図（Search Intent）を完璧に射抜いたタイトル設計と構造化の成果です。
+      また、52秒の滞在時間は情報の信頼性を証明しており、「迷わせない情報設計」をデータで裏付けています。
+    </p>
+  </div>
+  
+  {/* カードセクション */}
+  <div className="order-1 md:order-2 p-8 bg-white rounded-[40px] border border-slate-100 shadow-xl shadow-indigo-500/5 transition-all hover:shadow-indigo-500/10">
+    <div className="text-indigo-600 text-4xl mb-6">🎯</div>
+    <h4 className="font-bold text-xl mb-3 text-slate-900">検索意図への圧倒的適合</h4>
+    
+    <div className="flex items-end gap-3 mb-4">
+      <p className="text-5xl md:text-6xl font-black text-slate-900 tracking-tighter">52.7%</p>
+      <p className="text-2xl font-bold text-indigo-400 mb-2 tracking-tighter">/ 52s</p>
+    </div>
+
+    <p className="text-[11px] text-slate-400 font-medium bg-slate-50 inline-block px-3 py-1 rounded-full border border-slate-100">
+      Latest 28 Days (2026.04.13 - 05.10)
+    </p>
+  </div>
+</div>
+
   </div>
 </section>
 
