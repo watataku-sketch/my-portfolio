@@ -91,7 +91,7 @@ export default function BlogPage() {
           <p className="text-slate-500 mb-6 font-medium max-w-2xl mx-auto leading-relaxed">
             技術ブログ『Creative Coding Road』では、<br />
             Processingを軸としたコードの実装解説やツールの活用術を更新。<br />
-            2,100記事の執筆経験から得た知見を、技術の「深化」のプロセスとして全公開しています。
+            2,100記事の執筆経験から得た知見やプロセスを全公開しています。
           </p>
           <a 
             href="https://watataku-artist-katsuyaku.com" 

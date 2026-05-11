@@ -42,7 +42,7 @@ export default async function BlogDetailPage({ params }: { params: Promise<{ slu
         <div className="mt-24 p-10 bg-slate-900 rounded-[40px] text-white">
           <h3 className="text-2xl font-bold mb-4">さらに深い「技術ログ」を見る</h3>
           <p className="text-slate-400 mb-8">
-            技術ブログ『クリエイティブコーディングロード』では、Processingを軸としたコードの実装解説やツールの活用術を更新。2,100記事の執筆経験から得た知見を、技術の「深化」のプロセスとして全公開しています。技術ブログ「クリエイティブコーディングロード」で発信しています。
+            技術ブログ『クリエイティブコーディングロード』では、Processingを軸としたコードの実装解説やツールの活用術を更新。2,100記事の執筆経験から得た知見やプロセスを全公開しています。
           </p>
           <a href="https://watataku-artist-katsuyaku.com" target="_blank" className="inline-flex items-center gap-3 px-8 py-4 bg-rose-600 text-white rounded-full font-bold hover:bg-rose-500 transition-all">
             ブログを見る ↗
