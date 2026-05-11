@@ -85,7 +85,7 @@ export default function BlogPage() {
         </div>
 
         {/* ---------------------------------------------------------
-            ★ ここに「既存の技術ブログへの誘導」Codeを挿入します ★
+            ★ ここに「既存の技術ブログへ」 ★
         --------------------------------------------------------- */}
         <div className="mt-24 pt-16 border-t border-slate-100 text-center">
           <p className="text-slate-500 mb-6 font-medium max-w-2xl mx-auto leading-relaxed">

@@ -20,7 +20,6 @@ export default function DentalModel() {
   environment="city" 
   intensity={0.5} 
   adjustCamera={1.8}
-  // 🚀 center と shadows を一旦削除しました
 >
   <Model />
 </Stage>
@@ -33,7 +32,6 @@ export default function DentalModel() {
           enablePan={false}
           minPolarAngle={0} 
           maxPolarAngle={Math.PI / 1.75} 
-          // 💡 ここにあった autoRotate と autoRotateSpeed を削除しました
         />
       </Canvas>
     </div>

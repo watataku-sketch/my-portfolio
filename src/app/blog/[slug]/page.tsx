@@ -1,7 +1,7 @@
 // app/blog/[slug]/page.tsx
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
-import { blogPosts } from './blog-data'; // ここでデータを読み込む！
+import { blogPosts } from './blog-data';
 
 export default async function BlogDetailPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;

@@ -1,6 +1,6 @@
-"use client"; // 3Dモデルなどのクライアントサイド処理がある場合、これが必要です
+"use client";
 
-import React, { useState } from 'react'; // { useState } を追加
+import React, { useState } from 'react';
 import DentalModel from '@/components/DentalModel';
 
 
@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-white text-slate-900 font-sans selection:bg-blue-100">
 
-      {/* 🚀 【追加】ナビゲーションメニュー：ここから */}
+      {/* 🚀 【追加】ナビゲーションメニュー */}
       <nav className="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-md border-b border-slate-100">
         <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
           {/* ロゴ */}
@@ -223,15 +223,15 @@ export default function Home() {
           { year: '2014', content: 'お客様投票1位', location: '大阪市鶴見区音楽大使任命' },
         ].map((item, index) => (
           <tr key={index} className="flex flex-col md:table-row py-2 md:py-0 border-b border-slate-900 md:border-none last:border-0">
-            {/* 年月：スマホでは明るい白で強調 */}
+            {/* 年月 */}
             <td className="font-bold text-white mb-1 md:mb-0 md:py-5 md:pr-4 md:table-cell text-sm md:text-base md:font-normal md:text-slate-300">
               {item.year}
             </td>
-            {/* 内容：少し明るいグレーに統一 */}
+            {/* 内容 */}
             <td className="font-medium text-slate-200 mb-1 md:mb-0 md:py-5 md:pr-4 md:table-cell text-base">
               {item.content}
             </td>
-            {/* 場所：見にくいグレー(slate-400)からslate-200に変更 */}
+            {/* 場所 */}
             <td className="text-sm md:text-base text-slate-200 md:py-5 md:table-cell">
               {item.location}
             </td>
@@ -240,7 +240,7 @@ export default function Home() {
       </tbody>
     </table>
 
-    {/* 🚀 追加：Digital Strategy & Global Experience セクション */}
+    {/* 🚀 Digital Strategy & Global Experience セクション */}
     {/* スマホ1列/PC2列、余白はタイトに mt-0 pt-6 */}
     <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-12 mt-0 pt-6 border-t border-slate-900">
       
@@ -253,7 +253,6 @@ export default function Home() {
         <div className="space-y-6">
           <div>
             <h4 className="font-bold text-slate-100 mb-1">Google Discover選出:</h4>
-            {/* text-slate-400から200へ：視認性を大幅アップ */}
             <p className="text-slate-200 text-sm leading-relaxed">
               自著記事が11日間連続掲載で約3.7万回表示を記録。
             </p>
@@ -268,7 +267,6 @@ export default function Home() {
           
           <div>
             <h4 className="font-bold text-slate-100 mb-1">資格:</h4>
-            {/* ここは少し青みのある白でプロ感を演出 */}
             <p className="text-slate-200 text-sm font-medium">
               SEO検定1級 / Webマーケティング検定1級
             </p>

@@ -233,7 +233,7 @@ export const blogPosts: Record<string, BlogPost> = {
     ),
   },
 
-  // 3記事目（これから中身を埋めていく）
+  // 3記事目
   "trust-and-seo": {
     category: "SEO / Marketing",
     title: "2,100記事の「磨き上げ」で辿り着いた情報の価値。",

@@ -197,7 +197,7 @@ export default function WorksPage() {
         <p className="text-[10px] text-slate-400">※展示会場の空気感と、作品の輝きをじっくり見ていただくために、あえて静止画を掲載しています。</p>
       </div>
 
-      {/* 4枚の画像グリッド：縦長比率 [3/4] に変更 */}
+      {/* 4枚の画像グリッド */}
 <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-8">
   <div className="aspect-[3/4] bg-slate-100 rounded-2xl overflow-hidden shadow-sm">
     <img src="/images/station-tower-1.jpg" alt="展示風景1" className="w-full h-full object-cover" />
@@ -235,7 +235,7 @@ export default function WorksPage() {
     <span className="text-blue-600 italic">04.</span> ＫＩＴＴＥ大阪 AxCROSS - 大規模空間での初展示
   </h3>
 
-  {/* aspect-video に変更して、他の動画とサイズを統一 */}
+
   <div className="relative w-full aspect-video rounded-3xl overflow-hidden mb-2 shadow-xl bg-slate-900">
     <iframe
       className="absolute top-0 left-0 w-full h-full"
