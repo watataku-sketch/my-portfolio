@@ -15,7 +15,7 @@ const blogPosts = [
   {
     id: 2,
     category: "SEO/Marketing",
-    title: "2,100記事の「磨き上げ」で辿り着いた情報の価値。SEO/Webマーケ検定1級が教える、HealthTechに必要な信頼（E-E-A-T）の作り方。",
+    title: "2,100記事の「磨き上げ」で辿り着いた情報の価値。",
     description: "膨大な試行錯誤から学んだ「情報の質」へのこだわり。命を扱うプロダクトにおいて、いかにして信頼を構築し、インデックスさせるか。",
     date: "2026.04.24",
     color: "bg-green-50 text-green-600",
