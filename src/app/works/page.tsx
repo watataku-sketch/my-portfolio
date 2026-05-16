@@ -357,7 +357,6 @@ export default function WorksPage() {
   
   <div className="order-2 md:order-1 space-y-4 md:pr-4 border-l-4 md:border-l-0 md:border-r-2 border-indigo-500/20 pl-4 md:pl-0">
     <h4 className="text-xl font-bold text-slate-900 leading-snug">
-      {/* 52.7%の部分で変な改行が起きないよう inline-block を使用 */}
       検索需要のピーク時において、<span className="inline-block text-indigo-600">CTR 52.7%</span>を記録
     </h4>
 
@@ -388,6 +387,41 @@ export default function WorksPage() {
     </p>
   </div>
 </div>
+
+{/* 05. Media Growth / 全体グロース (左にカード / 右にテキスト) */}
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+      <div className="p-8 bg-white rounded-[40px] border border-slate-100 shadow-xl shadow-orange-500/5 transition-all hover:shadow-orange-500/10">
+        <div className="text-orange-600 text-4xl mb-6">📈</div>
+        <h4 className="font-bold text-xl mb-3 text-slate-900">メディア全体の爆発的グロース</h4>
+        
+        <div className="flex items-end flex-wrap gap-2 mb-4">
+          <p className="text-5xl font-black text-slate-900 tracking-tighter">4,035</p>
+          <p className="text-lg font-medium text-slate-400 italic mb-1">users</p>
+          {/* スマホで成長率が途中で折れないようにブロック化 */}
+          <span className="inline-block text-xs font-bold text-orange-600 bg-orange-50 px-2 py-1 rounded ml-1 mb-1">
+            前月比 ↑85.9%
+          </span>
+        </div>
+
+        <p className="text-[11px] text-slate-500 font-medium bg-slate-50 inline-block px-3 py-1 rounded-full border border-slate-100">
+          表示回数: 7,608回 <span className="text-orange-600 font-bold">(↑118.4%)</span> / イベント: 2.4万
+        </p>
+      </div>
+      
+      <div className="space-y-4 pl-4 border-l-2 border-slate-100">
+        <h4 className="text-xl font-bold text-slate-900 leading-tight">
+          個の媒体力をレバレッジしたエコシステムの構築
+        </h4>
+        <p className="text-orange-600 font-bold text-sm md:text-base">
+          Result: UU 4,035 / PV 7,608 / <span className="inline-block">ユーザーアクション 2.4万回</span>
+        </p>
+        <p className="text-sm text-slate-600 leading-relaxed">
+          <strong>Strategy:</strong> 
+          直近の観測期間（2026.04.16 - 05.15）において、技術ドキュメントの最適化が起点となり、サイト全体の回遊率とエンゲージメントが劇的に向上。
+          PV 118.4%増、イベント数2.4万回突破という圧倒的なグロースを記録しました。単発のトレンドに依存せず、検索意図を考えた投稿が、メディア全体の「資産価値」を引き上げた、データドリブンな証明です。
+        </p>
+      </div>
+    </div>
 
   </div>
 </section>
