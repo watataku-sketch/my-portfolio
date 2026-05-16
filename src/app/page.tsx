@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-white text-slate-900 font-sans selection:bg-blue-100">
 
-      {/* 🚀 【追加】ナビゲーションメニュー */}
+      {/* 🚀 ナビゲーションメニュー */}
       <nav className="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-md border-b border-slate-100">
         <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
           {/* ロゴ */}
@@ -58,14 +58,14 @@ export default function Home() {
 <section className="relative flex flex-col items-center justify-center pt-32 pb-20 px-6 text-center overflow-hidden w-full">
   <div className="max-w-4xl w-full mx-auto flex flex-col items-center">
     
-    {/* タイトル：3行構成でリズムを作る */}
+    {/* タイトル */}
     <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold mb-8 leading-tight tracking-tighter text-slate-900">
       説明のむずかしいことを、<br />
       3Dで「手に取るように」<br />
       わかりやすく
     </h1>
 
-    {/* サブテキスト：横幅を絞り、行間を広げて「柱」にする */}
+    {/* サブテキスト */}
     <p className="text-lg md:text-xl text-slate-900 max-w-2xl mx-auto mb-12 leading-[1.8] font-medium">
       7年間の在宅介護で直面した「言葉が届かない」もどかしさを<br className="hidden md:block" />
       3Dの力で、誰もが直感的に納得できる「目に見える安心」へ
@@ -88,7 +88,7 @@ export default function Home() {
 
       <hr className="border-slate-100 max-w-4xl mx-auto" />
 
-      {/* --- 第2段階: MISSION --- */}
+      {/* --- MISSION --- */}
       <section className="max-w-4xl mx-auto py-24 px-6">
         <h2 className="text-2xl font-bold mb-12 flex items-center">
           <span className="w-8 h-1 bg-blue-600 mr-4"></span>
@@ -98,7 +98,6 @@ export default function Home() {
           <div className="space-y-4">
             <h3 className="text-xl font-bold text-blue-600">「食べること」がリスクに変わる前に</h3>
             <p className="text-slate-600 leading-relaxed">
-             「食べること」がリスクに変わる前に。
               食べ物や汚れが肺に入り込み命を脅かすことや、口の衰えが全身の元気を奪っていくこと。そんな「見えないリスク」が、在宅介護の現場では見過ごされています。口腔ケアを、不潔を防ぐためだけではなく、一生自分の口で食べるための「予防」へ。
             </p>
           </div>
